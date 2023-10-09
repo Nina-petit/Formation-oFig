@@ -1,0 +1,240 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    background-color: #C80000;
+    color: #FFF;
+    font-size: 38px;
+
+    height: 64px;
+    padding-left: 32px;
+
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: center;
+}
+
+h2 em {
+    font-size: 0.4em;
+    margin-left: 8px;
+}
+
+h1 {
+    background-color: #666;
+    color: #FFF;
+    height: 32px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+}
+
+h1 em {
+    font-style: italic;
+    margin-left: 8px;
+    font-size: 1.1em;
+}
+
+main {
+    flex-grow: 1;
+    margin: 25px 20% 10px 20%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cart-section, .delivery-section, .total-section, .confirm-section {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 10px 0;
+}
+
+.cart {
+    align-self: center;
+    width: 95%;
+    box-shadow: 0px 3px 6px 0px #CCCCCC;
+    margin-bottom: 10px;
+}
+
+.cart thead {
+    border-bottom: 1px solid #ccc;
+}
+
+.cart td, .cart th {
+    text-align: center;
+    padding: 8px 20px;
+}
+
+.cart th {
+    font-weight: bold;
+}
+
+.cart__quantity {
+    color: #C80000;
+    text-decoration: underline;
+    font-size: .7em;
+}
+
+.quantity {
+    width: 40px;
+}
+
+#cart__total, .total-section h3 {
+    font-weight: bold;
+}
+
+#cart__total-price, .total-section p {
+    color: #C80000;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.delivery-preferences {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 95%;
+    padding-bottom: 24px;
+}
+
+.delivery-preferences__column {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(163, 162, 162);
+    margin: 24px 0 24px 0;
+}
+
+.delivery-preferences input {
+    height: 30px;
+}
+.cart input {
+    margin-right: 5px;
+}
+
+.delivery-preferences input, textarea {
+    background-color: #f8F8F8;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 5px 5px 5px 0;
+}
+
+.total-section, .confirm-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#adress input, textarea {
+    width: 100%;
+}
+
+
+.total-payment {
+    width: 95%;
+    box-shadow: 0px 3px 6px 0px #CCCCCC;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    font-size: 1.2em;
+    width: 40%;
+    font-weight: bold;
+    border: none;
+    padding: 20px;
+}
+
+.button--pay {
+    background-color: #c80000;
+    color: #fff;
+}
+
+label {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer {
+    background-color: #666;
+    color: #FFF;
+    height: 32px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+
+    font-size: 0.9em;
+}
+
+.solde-banner {
+    background-color: #C80000;
+    color: #FFF;
+
+    position: fixed;
+
+    left: 0;
+    top: 33%;
+
+    font-weight: bold;
+    width: 20px;
+    height: 128px;
+    text-align: center;
+
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+
+    animation: 4s ease-in-out 0s infinite alternate anim_banner;
+
+    box-shadow: 0 0 4px 0 rgb(255, 166, 166);
+}

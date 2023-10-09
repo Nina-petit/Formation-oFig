@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oFig panier</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <h2>
+            oFig
+            <em>
+                Figurines et statuettes
+            </em>
+        </h2>
+        <h1>
+            Votre panier
+            <em>
+                2 produits
+            </em>
+        </h1>
+    </header>
+
+    <main>
+            <div class="cart-section">
+                <h3>
+                    Votre panier
+                </h3>
+        
+                <table class="cart">
+                    <thead>
+                        <tr>
+                            <th>Figurine</th>
+                            <th>Prix unitaire</th>
+                            <th>Quantité</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cloud strife</td>
+                            <td>59 €</td>
+                            <td class="cart__quantity">
+                                <input type="number" min="1" name="quantity-1" id="quantity-1" class="quantity" placeholder="1">
+                                    supprimer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tifa Lockhart</td>
+                            <td>69 €</td>
+                            <td class="cart__quantity">
+                                <input type="number" min="1" name="quantity-2" id="quantity-2" class="quantity" placeholder="1">
+                                    supprimer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Barret Wallace</td>
+                            <td>69 €</td>
+                            <td class="cart__quantity">
+                                <input type="number" min="1" name="quantity-3" id="quantity-3" class="quantity" placeholder="1">
+                                    supprimer
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" id="cart__total">Total de la commande :</td>
+                            <td id="cart__total-price">
+                                197€
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        <div class="delivery-section">
+            <h3>
+                Préférences de livraison
+            </h3>
+            <div class="delivery-preferences">
+                <div class="delivery-preferences__column">
+                    <fieldset>
+                        <h4>
+                            Où souhaitez-vous être livré?
+                        </h4>
+                        
+                        <label>
+                            <input type="radio" name="address-choice" checked>Mon adresse courante
+                        </label>
+                        <label>
+                            <input type="radio" name="address-choice">Autre adresse
+                        </label>
+                    </fieldset>
+    
+                    <fieldset>
+                        <h4>
+                            Options
+                        </h4>
+                        <label>
+                            <input type="checkbox">Suivi de livraison par sms (inclus)
+                        </label>
+                        <label>
+                            <input type="checkbox">Satisfait ou remboursé (+2 euros)
+                        </label>
+                        <label>
+                            <input type="checkbox">Garantie 2 ans (+10 euros)
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="delivery-preferences__column">
+                    <fieldset id="adress">
+                        <h4>
+                            Adresse
+                        </h4>
+                        <label>Rue</label>
+                        <input type="text" name="street">
+                        <label >Code postal</label>
+                        <input type="number" name="zip-code">
+                        <label >Ville</label>
+                        <input type="text" name="city">
+                    </fieldset>
+
+                    <fieldset>
+                        <h4>
+                            Informations complémentaires
+                        </h4>
+                        <label>interphone, bâtiment, etc.</label>
+                        <textarea name="infos" id="" cols="30" rows="3"></textarea>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div class="total-section">
+                <div class="total-payment">
+                    <h3>
+                        Montant total à régler :
+                    </h3>
+                    <p>
+                        197 €
+                    </p>
+                </div>
+        </div>
+
+        <div class="confirm-section">
+            <div class="buttons">
+                <button class="button button--continue">
+                    Continuer vos achats
+                </button>
+                <button class="button button--pay">
+                    Valider et payer
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="solde-banner">
+        SOLDES
+    </div>
+
+    <footer>
+        oFig - toutes les images sont sous copyright SquareEnix
+    </footer>
+</body>
+</html>
