@@ -1,0 +1,133 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: #FFFFFF;
+    background-color: #C80000;
+    padding: 20px;
+    font-size: 25px;
+    margin: 0;
+}
+
+h1 em {
+    font-style: normal;
+    font-size: 15px;
+}
+
+h2 {
+    color: #FFFFFF;
+    background-color: #666;
+    text-align: center;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    padding: 5px;
+    font-size: 20px;
+}
+
+h2 strong {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid #ccc;
+    width: 400px;
+    padding: 10px;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+aside {
+    text-transform: uppercase;
+    color: #ccc;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    padding-left: 2px;
+}
+
+.presentation-picture {
+    width: 100%;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    background-color: #C80000;
+    padding: 20px;
+}
+
+.price-before {
+    text-decoration: line-through;
+}
+
+.actual-price {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+footer {
+    color: #FFFFFF;
+    background-color: #666;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    .product {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .product {
+        width: 200px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: .8em;
+    }
+
+    .add-to-cart {
+        padding: 10px;
+        font-size: .8em;
+    }
+
+    .actual-price {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .cart {
+        margin-right: 2px;
+    }
+
+}
